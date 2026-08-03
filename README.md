@@ -65,4 +65,4 @@ npm start
 Frontend opens automatically on http://localhost:3000🔌 
 
 🌐 Live DeploymentLive Demo: https://portfolio-app-roan-seven.vercel.app/
-GitHub Repository: https://github.com/Harshita123Gogia
+GitHub Repository: https://github.com/Harshita123Gogia/PORTFOLIO_APP
