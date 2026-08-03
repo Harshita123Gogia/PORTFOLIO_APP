@@ -64,5 +64,5 @@ npm install
 npm start
 Frontend opens automatically on http://localhost:3000🔌 
 
-🌐 Live DeploymentLive Demo: View Live Portfolio (Replace with your live URL)
+🌐 Live DeploymentLive Demo: https://portfolio-app-roan-seven.vercel.app/
 GitHub Repository: https://github.com/Harshita123Gogia
