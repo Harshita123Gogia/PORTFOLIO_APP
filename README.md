@@ -3,7 +3,7 @@
 A dynamic, modern, responsive full-stack portfolio website showcasing web applications, AI/ML models, cloud architecture, and technical projects.
 
 ![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Node.js%20%7C%20Express-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 ---
 
@@ -57,7 +57,9 @@ cd PORTFOLIO_APP
 cd backend
 npm install
 npm start
-Server runs on http://localhost:50004. Start the Frontend ApplicationOpen a new terminal window:Bashcd frontend
+4. Start the Frontend Application
+Open a new terminal window:
+cd frontend
 npm install
 npm start
 Frontend opens automatically on http://localhost:3000🔌 
