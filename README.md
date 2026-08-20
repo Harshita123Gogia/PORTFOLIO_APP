@@ -4,9 +4,6 @@ A dynamic, modern, responsive full-stack portfolio website showcasing web applic
 
 ![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Node.js%20%7C%20Express-blue)
 
-
----
-
 ## 📌 Features
 
 * **Dynamic Data Rendering:** Fetches project details, tech stacks, skills, and achievements directly from the Express backend API.
