@@ -139,22 +139,25 @@ function App() {
   const API_BASE = "http://localhost:5000/api";
 
   useEffect(() => {
-    const fetchData = async (endpoint, setter, defaultData) => {
-      try {
-        const res = await fetch(`${API_BASE}/${endpoint}`);
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        const data = await res.json();
-        setter(data);
-      } catch (err) {
-        console.warn(`Backend endpoint /${endpoint} unavailable. Using fallback state.`);
-        setter(defaultData);
-      }
-    };
+    fetch(`${API_BASE}/profile`)
+      .then(res => res.json())
+      .then(data => setProfile(data))
+      .catch(err => console.log("Using default profile data (backend disconnected)."));
 
-    fetchData('profile', setProfile, defaultProfile);
-    fetchData('skills', setSkills, defaultSkills);
-    fetchData('projects', setProjects, defaultProjects);
-    fetchData('achievements', setAchievements, defaultAchievements);
+    fetch(`${API_BASE}/skills`)
+      .then(res => res.json())
+      .then(data => setSkills(data))
+      .catch(err => console.log("Using default skills data."));
+
+    fetch(`${API_BASE}/projects`)
+      .then(res => res.json())
+      .then(data => setProjects(data))
+      .catch(err => console.log("Using default projects data."));
+
+    fetch(`${API_BASE}/achievements`)
+      .then(res => res.json())
+      .then(data => setAchievements(data))
+      .catch(err => console.log("Using default achievements data."));
   }, []);
 
   const handleInputChange = (e) => {
